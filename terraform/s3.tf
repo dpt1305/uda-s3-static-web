@@ -9,7 +9,7 @@ resource "aws_s3_bucket" "main_bucket" {
     }
 }
 
-resource "aws_s3_bucket_website_configuration" "example" {
+resource "aws_s3_bucket_website_configuration" "website_configuration" {
     bucket = aws_s3_bucket.main_bucket.id
 
     index_document {
@@ -19,4 +19,11 @@ resource "aws_s3_bucket_website_configuration" "example" {
     error_document {
         key = "index.html"
     }
+}
+
+resource "aws_s3_object" "index" {
+    bucket = resource.aws_s3_bucket.main_bucket.id
+    key    = "index.html"
+    source = "../udacity-starter-website/index.html"
+    content_type = "text/html"
 }
