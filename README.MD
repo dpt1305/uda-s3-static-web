@@ -16,21 +16,24 @@
 
 
 # Usage
-1. S3 bucket permission
+## 1. S3 bucket permission
     ![alt text](image-1.png)
     ![alt text](image-3.png)
     ![alt text](image-8.png)
 
-2. Objects on bucket:
+## 2. Objects on bucket:
     ![alt text](image-2.png)
 
-2. Static Website Hosting (link: "http://my-421841691874-bucket.s3-website-us-east-1.amazonaws.com"):
+## 3. Static Website Hosting:
+- Link: "http://my-421841691874-bucket.s3-website-us-east-1.amazonaws.com"
     ![alt text](image-4.png)
     ![alt text](image-5.png)
 
-3. CloudFront distribution (link: "https://d1e7x0xu0x0nh5.cloudfront.net")
+## 4. CloudFront distribution 
+- State: "Enable"
     ![alt text](image-9.png)
     ![alt text](image-10.png)
+- Link: "https://d1e7x0xu0x0nh5.cloudfront.net"
     ![alt text](image-11.png)
 
 # Roadmap
