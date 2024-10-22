@@ -1,25 +1,42 @@
+# Installation
+
 1. Provision S3 bucket:
-    > cd ./terraform
+    ```
+    cd ./terraform
+    terraform init
+    terraform apply --auto-approve
+    ```
     
-    > terraform init
-    
-    > terraform apply 
-    
-    ![alt text](image-1.png)
 
 2. Upload folder "udacity-starter-website" to bucket:
-    > chmod 777 ./upload-folder.sh
+    ```
+    chmod 777 ./upload-folder.sh
+    ./upload-folder.sh
+    ```
 
-    > ./upload-folder.sh
 
-    ![alt text](image-2.png)
-3. S3 bucket permission:
+# Usage
+1. S3 bucket permission
+    ![alt text](image-1.png)
     ![alt text](image-3.png)
+    ![alt text](image-8.png)
 
-4. Access through Web static:
+2. Objects on bucket:
+    ![alt text](image-2.png)
+
+2. Static Website Hosting (link: "http://my-421841691874-bucket.s3-website-us-east-1.amazonaws.com"):
     ![alt text](image-4.png)
     ![alt text](image-5.png)
 
-5. Cloudfront distribution:
-    ![alt text](image-6.png)
-    ![alt text](image-7.png)
+3. CloudFront distribution (link: "https://d1e7x0xu0x0nh5.cloudfront.net")
+    ![alt text](image-9.png)
+    ![alt text](image-10.png)
+    ![alt text](image-11.png)
+
+# Roadmap
+- [x] S3 bucket:
+    - [x] S3 policy
+    - [x] Upload files/folder
+    - [x] Static website hosting
+- [x] CloudFront:
+    - [x] CloudFront distribution
